@@ -1,0 +1,890 @@
+/* normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: flex;
+    background-color: rgb(19, 162, 162);
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__img {
+    max-width: 280px;
+}
+
+.menu__lista {
+    display: flex;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    gap: 40px;
+}
+
+.menu__lista a {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .menu__lista {
+        font-size: 20px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .menu__lista {
+        font-size: 15px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .menu__lista {
+        font-size: 15px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu__lista {
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+/* main */
+
+main {
+    background-image: url(../img/Fondo\ pagina\ png.png);
+    overflow: auto;
+}
+
+/* main index*/
+
+#grid__index {
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 473px ;
+}
+
+.p__section1 {
+    font-size: 36px;
+    grid-column: 3 / 5;
+    font-family: 'DM Serif Text', serif;
+}
+
+.p__section2 {
+    font-size: 25px;
+    grid-column: 2 / 6;
+    font-style: italic;
+    text-align: center;
+}
+
+.p__section3 {
+    font-size: 25px;
+    font-style: italic;
+    grid-column: 2 / 6;
+    text-align: center;
+}
+
+.p__section4 {
+    font-size: 25px;
+    grid-column: 3 / 5;
+    font-style: italic;
+    text-align: center;
+}
+
+.img__section {
+    grid-column: 2 / 6;
+    grid-row: 5 / 9;
+}
+
+@media screen and (max-width: 1050px) {
+    #grid__index {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    } 
+}
+
+@media screen and (max-width: 900px) {
+    .p__section1 {
+        font-size: 30px;
+    }
+    
+    .p__section2 {
+        font-size: 20px;
+    }
+    
+    .p__section3 {
+        grid-column: 1 / 7;
+        font-size: 20px;
+}
+    .p__section4 {
+        grid-column: 2 / 6;
+        font-size: 20px;  
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    #grid__index {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    } 
+}
+
+@media screen and (max-width: 900px) {
+    .p__section2 {
+        grid-column: 1 / 7;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #grid__index {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    } 
+}
+
+/* main servicios */
+
+.grid__servicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.p__servicios {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.atencionclinica {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    font-family: 'DM Serif Text', serif;
+    font-size: 45px;
+}
+
+.p__atencionclinica {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.niñosyadolescentes {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.img__niño {
+    grid-column: 1 / 2;
+    grid-row: 5 / 8;
+    width: 100%;
+}
+
+.img__adolescente {
+    grid-column: 2 / 3;
+    grid-row: 5 / 8;
+    width: 100%;
+}
+
+.p__niñosyadolescentes {
+    grid-column: 1 / 3;
+    grid-row: 8 / 10;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.adultos {
+    grid-column: 3 / 5;
+    grid-row: 4;
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
+}
+
+.img__adultos {
+    grid-column: 3 / 5;
+    grid-row: 5 / 8;
+    width: 50%;
+}
+
+.p__adultos {
+    grid-column: 3 / 5;
+    grid-row: 8 / 10;
+    padding-left: 20px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1230px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .img__niño {
+        grid-row: 5 / 7;
+    }
+    
+    .img__adolescente {
+        grid-row: 5 / 7;
+    }
+    .img__adultos {
+        grid-row: 5 / 7;
+    }
+
+    .p__niñosyadolescentes {
+        grid-row: 7 / 9;
+    }
+
+    .p__adultos {
+        grid-row: 7 / 9;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 130px 80px 70px 70px 160px 140px;
+    }
+
+    .img__niño {
+        grid-row: 5 / 6;
+    }
+    
+    .img__adolescente {
+        grid-row: 5 / 6;
+    }
+    .img__adultos {
+        grid-row: 5 / 6;
+    }
+
+    .p__niñosyadolescentes {
+        grid-row: 6 / 7;
+    }
+
+    .p__adultos {
+        grid-row: 6 / 7;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 130px 80px 70px 70px 160px 160px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .atencionclinica {
+        font-size: 30px;
+    }
+    
+    .niñosyadolescentes {
+        font-size: 25px;
+    }
+
+    .adultos {
+        font-size: 25px;
+    }
+
+    .p__servicios {
+        font-size: 13px;
+    }
+
+    .p__atencionclinica {
+        font-size: 13px;
+    }
+
+    .p__niñosyadolescentes {
+        font-size: 13px
+    }
+
+    .p__adultos {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 165px 50px 70px 50px 100px 170px;
+    }
+
+    .atencionclinica {
+        font-size: 25px;
+    }
+    
+    .niñosyadolescentes {
+        font-size: 20px;
+    }
+
+    .adultos {
+        font-size: 20px;
+    }
+
+    .p__servicios {
+        font-size: 13px;
+    }
+
+    .p__atencionclinica {
+        font-size: 13px;
+    }
+
+    .p__niñosyadolescentes {
+        font-size: 13px
+    }
+
+    .p__adultos {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 220px 50px 90px 50px 50px 285px;
+    }
+
+    .atencionclinica {
+        font-size: 20px;
+    }
+    
+    .niñosyadolescentes {
+        font-size: 17px;
+    }
+
+    .adultos {
+        font-size: 17px;
+    }
+
+    .p__servicios {
+        font-size: 12px;
+    }
+
+    .p__atencionclinica {
+        font-size: 12px;
+    }
+
+    .p__niñosyadolescentes {
+        font-size: 12px
+    }
+
+    .p__adultos {
+        font-size: 12px;
+    }
+}
+
+/* main quien soy */
+
+.grid__quiensoy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-right: 45px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 433px;
+}
+
+.img__quiensoy {
+    grid-column: 1;
+    grid-row: 1 / 7;
+}
+
+.p__quiensoy1 {
+    grid-column: 2 / 5;
+    grid-row: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p__quiensoy2 {
+    grid-column: 2 / 5;
+    grid-row: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p__quiensoy3 {
+    grid-column: 2 / 5;
+    grid-row: 3;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.p__quiensoy4 {
+    grid-column: 2 / 5;
+    grid-row: 4 / 6;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.a__quiensoy {
+    grid-column: 2 / 5;
+    grid-row: 6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 675px) {
+    .grid__quiensoy {
+        justify-items: center;
+        align-items: center;
+        margin-right: 45px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .grid__quiensoy {
+        font-size: 13px;
+        height: 600px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .grid__quiensoy {
+        grid-template-columns: 300px;
+        grid-template-rows: 100px 60px 60px 140px 100px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .img__quiensoy {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        width: 80px;
+    }
+    
+    .p__quiensoy1 {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    
+    .p__quiensoy2 {
+        grid-column: 1;
+        grid-row: 3 / 4;
+    }
+    
+    .p__quiensoy3 {
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+    
+    .p__quiensoy4 {
+        grid-column: 1;
+        grid-row: 5 / 6;
+    }
+    
+    .a__quiensoy {
+        grid-column: 1;
+        grid-row: 6 / 7;
+    }
+}
+
+/* Modalidad */
+
+.grid__terapiaonline {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p__modalidad {
+    grid-row: 1;
+}
+
+.h1__terapiaonline {
+    grid-row: 2;
+    text-align: center;
+}
+
+.p__terapiaonline {
+    grid-row: 3;
+}
+
+.grid__ventajas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h2__ventajas {
+    grid-row: 1;
+    padding-top: 15px;
+    justify-items: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.ventajas__online {
+    grid-row: 2 / 5;
+}
+
+.li__ventajas {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+
+.grid__terapiapresencial {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1__modalidad {
+    grid-row: 1;
+    text-align: center;
+}
+
+.p__terapiapresencial1 {
+    grid-row: 2;
+}
+
+.p__terapiapresencial2 {
+    grid-row: 3;
+}
+
+.grid__ventajas2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ventajas__presencial {
+    grid-row: 2 / 5;
+}
+
+@media screen and (max-width: 892px) {
+    .grid__terapiaonline {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        margin-top: 30px;
+    }
+
+    .p__modalidad {
+    grid-row: 1;
+    }
+
+    .h1__terapiaonline {
+    grid-row: 2;
+    text-align: center;
+    }
+
+    .p__terapiaonline {
+    grid-row: 3 / 6;
+    }
+
+    .grid__ventajas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .ventajas__online {
+        grid-row: 2 / 7;
+    }
+
+    .grid__terapiapresencial {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .p__terapiapresencial2 {
+        grid-row: 3 / 5;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .grid__terapiaonline {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .p__modalidad {
+        grid-row: 1 / 3;
+    }
+    
+    .h1__terapiaonline {
+        grid-row: 3;
+        text-align: center;
+    }
+    
+    .p__terapiaonline {
+        grid-row: 4 / 8;
+    }
+
+    .grid__ventajas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        font-size: 13px;
+    }
+
+    .h2__ventajas {
+        grid-row: 1;
+    }
+    
+    .ventajas__online {
+        grid-row: 2 / 9;
+    }
+    
+    .li__ventajas {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 30px;
+    }
+
+    .grid__terapiapresencial {
+        font-size: 13px;
+    }
+
+    .grid__ventajas2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        font-size: 13px;
+    }
+    
+    .ventajas__presencial {
+        grid-row: 2 / 6;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .grid__ventajas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        padding-bottom: 15px;
+    }
+    
+    .ventajas__online {
+        grid-row: 2 / 11;
+    }
+
+    .grid__ventajas2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+    
+    .ventajas__presencial {
+        grid-row: 2 / 8;
+    }
+}
+/* contacto */
+
+form {
+    display: grid;
+    grid-template-columns: 370px 300px;
+    grid-template-rows: 30px 30px 160px;
+    justify-content: center;
+    align-content: center;
+    height: 553px;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form__nombre {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form__edad {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.form__telefono {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.form__mail {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.form__textarea {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.form__botones {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+@media screen and (max-width: 730px) {
+    form {
+        grid-template-columns: 370px;
+        grid-template-rows: 30px 30px 30px 30px 160px 30px;
+    }
+
+    .form__nombre {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .form__edad {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .form__telefono {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .form__mail {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .form__textarea {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .form__botones {
+        grid-column: 1;
+        grid-row: 6;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    form {
+        display: block;
+        margin-top: 150px;
+    }
+
+    .form__nombre {
+        height: 35px;
+    }
+    
+    .form__edad {
+        height: 35px;
+    }
+    
+    .form__telefono {
+        height: 35px;
+    }
+    
+    .form__mail {
+        height: 35px;
+    }
+    
+    .form__textarea {
+        height: 200px;
+        padding-top: 15px;
+    }
+    
+    .form__botones {
+        height: 35px;
+        padding-left: 78px;
+    }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(19, 162, 162);
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iconos__footer {
+    width: 20px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+.footer__picture {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 670px) {
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        flex-direction: column;
+    }
+}
