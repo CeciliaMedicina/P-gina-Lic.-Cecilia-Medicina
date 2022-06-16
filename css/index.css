@@ -194,8 +194,6 @@ main {
     grid-template-rows: repeat(9, 1fr);
     justify-items: center;
     align-items: center;
-    margin-left: 45px;
-    margin-right: 45px;
     margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -436,10 +434,9 @@ main {
     grid-template-rows: repeat(6, 1fr);
     justify-items: center;
     align-items: center;
-    margin-right: 45px;
     margin-top: 60px;
     margin-bottom: 60px;
-    height: 433px;
+    min-height: 433px;
 }
 
 .img__quiensoy {
@@ -761,7 +758,7 @@ form {
     grid-template-rows: 30px 30px 160px;
     justify-content: center;
     align-content: center;
-    height: 553px;
+    min-height: 553px;
     gap: 50px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -940,4 +937,12 @@ footer p {
 
 .btn {
     width: 200px;
+}
+
+/* Servicios */
+
+.offcanvas__servicios {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 45px;
 }
