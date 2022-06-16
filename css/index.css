@@ -35,11 +35,11 @@ header {
     font-size: 25px;
     font-family: 'Times New Roman';
     gap: 40px;
+    padding-left: 0px;
 }
 
 .menu__lista a {
     color: white;
-    padding: 10px;
 }
 
 .menu__lista a:hover {
@@ -68,15 +68,22 @@ header {
 
 @media screen and (max-width: 520px) {
     .menu__lista {
-        font-size: 15px;
-        gap: 7px;
+        font-size: 20px;
+        gap: 15px;
     }
 }
 
-@media screen and (max-width: 406px) {
+@media screen and (max-width: 475px) {
     .menu__lista {
-        font-size: 11px;
-        gap: 1px;
+        font-size: 18px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .menu__lista {
+        font-size: 15px;
+        gap: 5px;
     }
 }
 
@@ -545,10 +552,10 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin: auto;
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
 }
 
 .p__modalidad {
@@ -596,10 +603,10 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-top: 20px;
+    margin: auto;
+    margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
 }
 
 .h1__modalidad {
@@ -755,7 +762,7 @@ form {
     justify-content: center;
     align-content: center;
     height: 553px;
-    gap: 30px;
+    gap: 50px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -868,6 +875,7 @@ footer {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: normal;
 }
 
 .iconos__footer {
@@ -876,6 +884,7 @@ footer {
 
 footer p {
     font-size: 20px;
+    margin: 0;
 }
 
 .footer__picture {
@@ -900,4 +909,35 @@ footer p {
     footer {
         flex-direction: column;
     }
+}
+
+/* CSS aplicando bootstrap*/
+
+/* Index */
+
+.container_carrusel {
+    width: 70%;
+    margin: 0 auto 60px;
+}
+
+/* Modalidad */
+
+.section_terapia_presencial {
+    margin-bottom: 60px;
+}
+
+/* Formulario */
+
+.Button__Enviar {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.Button__Reset {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.btn {
+    width: 200px;
 }
