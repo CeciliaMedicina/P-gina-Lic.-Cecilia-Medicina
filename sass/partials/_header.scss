@@ -1,0 +1,32 @@
+/* header */
+
+header {
+    display: flex;
+    background:linear-gradient(to right,rgb(19, 162, 162) 30%, rgb(105, 225, 225) 90%);
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__img {
+        max-width: 280px;
+    }
+
+    .menu__lista {
+        display: flex;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Times New Roman';
+        gap: 40px;
+        padding-left: 0px;
+    
+        a {
+            color: white;
+            &:hover {
+                background-color: rgb(246, 166, 179);
+                transition: background-color 1s;
+            }
+        }
+    }
+}

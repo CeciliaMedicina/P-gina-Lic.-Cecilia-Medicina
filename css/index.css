@@ -549,7 +549,7 @@ main {
 
 /* Modalidad */
 
-.grid__terapiaonline {
+.terapiaonline__grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -560,38 +560,17 @@ main {
     max-width: 1200px;
 }
 
-.p__modalidad {
+.terapiaonline__p {
     grid-row: 1;
 }
 
-.h1__terapiaonline {
+.terapiaonline__h1 {
     grid-row: 2;
     text-align: center;
 }
 
-.p__terapiaonline {
+.terapiaonline__p2 {
     grid-row: 3;
-}
-
-.grid__ventajas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    margin-left: 45px;
-    margin-right: 45px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.h2__ventajas {
-    grid-row: 1;
-    padding-top: 15px;
-    justify-items: center;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.ventajas__online {
-    grid-row: 2 / 5;
 }
 
 .li__ventajas {
@@ -611,61 +590,39 @@ main {
     max-width: 1200px;
 }
 
-.h1__modalidad {
+.grid__modalidad {
     grid-row: 1;
     text-align: center;
 }
 
-.p__terapiapresencial1 {
+.grid__p1 {
     grid-row: 2;
 }
 
-.p__terapiapresencial2 {
+.grid__p2 {
     grid-row: 3;
 }
 
-.grid__ventajas2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-bottom: 60px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.ventajas__presencial {
-    grid-row: 2 / 5;
-}
 
 @media screen and (max-width: 892px) {
-    .grid__terapiaonline {
+    .terapiaonline__grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         margin-top: 30px;
     }
 
-    .p__modalidad {
+    .terapiaonline__p {
     grid-row: 1;
     }
 
-    .h1__terapiaonline {
+    .terapiaonline__h1 {
     grid-row: 2;
     text-align: center;
     }
 
-    .p__terapiaonline {
+    .terapiaonline__p2 {
     grid-row: 3 / 6;
-    }
-
-    .grid__ventajas {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-
-    .ventajas__online {
-        grid-row: 2 / 7;
     }
 
     .grid__terapiapresencial {
@@ -674,7 +631,7 @@ main {
         gap: 15px;
     }
 
-    .p__terapiapresencial2 {
+    .grid__p2 {
         grid-row: 3 / 5;
     }
 }
@@ -687,31 +644,17 @@ main {
         font-size: 13px;
     }
 
-    .p__modalidad {
+    .terapiaonline__p {
         grid-row: 1 / 3;
     }
     
-    .h1__terapiaonline {
+    .terapiaonline__h1 {
         grid-row: 3;
         text-align: center;
     }
     
-    .p__terapiaonline {
+    .terapiaonline__p2 {
         grid-row: 4 / 8;
-    }
-
-    .grid__ventajas {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        font-size: 13px;
-    }
-
-    .h2__ventajas {
-        grid-row: 1;
-    }
-    
-    .ventajas__online {
-        grid-row: 2 / 9;
     }
     
     .li__ventajas {
@@ -719,42 +662,8 @@ main {
         padding-bottom: 5px;
         padding-left: 30px;
     }
-
-    .grid__terapiapresencial {
-        font-size: 13px;
-    }
-
-    .grid__ventajas2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        font-size: 13px;
-    }
-    
-    .ventajas__presencial {
-        grid-row: 2 / 6;
-    }
 }
 
-@media screen and (max-width: 360px) {
-    .grid__ventajas {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, 1fr);
-        padding-bottom: 15px;
-    }
-    
-    .ventajas__online {
-        grid-row: 2 / 11;
-    }
-
-    .grid__ventajas2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
-    }
-    
-    .ventajas__presencial {
-        grid-row: 2 / 8;
-    }
-}
 /* contacto */
 
 form {
@@ -880,7 +789,7 @@ footer {
     font-family: normal;
 }
 
-.iconos__footer {
+.footer__iconos {
     width: 20px;
 }
 
@@ -924,7 +833,7 @@ footer p {
 
 /* Modalidad */
 
-.section_terapia_presencial {
+.section__terapiapresencial {
     margin-bottom: 60px;
 }
 

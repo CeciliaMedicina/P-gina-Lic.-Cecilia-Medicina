@@ -1,0 +1,32 @@
+{
+  "name": "sexta_entrega_pagina_psicologia_cecilia-medicina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CeciliaMedicina/P-gina-Lic.-Cecilia-Medicina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CeciliaMedicina/P-gina-Lic.-Cecilia-Medicina/issues"
+  },
+  "homepage": "https://github.com/CeciliaMedicina/P-gina-Lic.-Cecilia-Medicina#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,0 +1,19 @@
+/* MISC */
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+@import './misc/mediaqueries';
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* VIEWS */
+
+@import './views/home';
+@import './views/quiensoy';
+@import './views/servicios';
+@import './views/modalidad';
+@import './views/contacto';
