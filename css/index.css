@@ -197,6 +197,7 @@ main {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0px 15px 0px 15px;
+    font-size: 16px;
 }
 
 .img__quiensoy {
@@ -317,6 +318,7 @@ main {
     align-items: center;
     margin-top: 60px;
     margin-bottom: 40px;
+    font-size: 16px;
 }
 
 .p__servicios {
@@ -329,7 +331,7 @@ main {
 .atencionclinica {
     grid-column: 1 / 5;
     grid-row: 2;
-    font-family: 'DM Serif Text', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 45px;
 }
 
@@ -343,8 +345,8 @@ main {
 .niñosyadolescentes {
     grid-column: 1 / 3;
     grid-row: 4;
-    font-family: 'DM Serif Text', serif;
-    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
     text-align: center;
 }
 
@@ -370,8 +372,8 @@ main {
 .adultos {
     grid-column: 3 / 5;
     grid-row: 4;
-    font-family: 'DM Serif Text', serif;
-    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
 }
 
 .img__adultos {
@@ -558,6 +560,7 @@ main {
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
     max-width: 1200px;
+    font-size: 16px;
 }
 
 .terapiaonline__p {
@@ -567,6 +570,7 @@ main {
 .terapiaonline__h1 {
     grid-row: 2;
     text-align: center;
+    font-size: 38px;
 }
 
 .terapiaonline__p2 {
@@ -588,11 +592,13 @@ main {
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
     max-width: 1200px;
+    font-size: 16px;
 }
 
 .grid__modalidad {
     grid-row: 1;
     text-align: center;
+    font-size: 38px;
 }
 
 .grid__p1 {

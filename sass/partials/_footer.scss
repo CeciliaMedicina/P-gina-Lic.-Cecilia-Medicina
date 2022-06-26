@@ -1,13 +1,7 @@
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    background:linear-gradient(to left,rgb(19, 162, 162) 30%, rgb(105, 225, 225) 90%);
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: normal;
+    @include flex(linear-gradient(to left,rgb(19, 162, 162) 30%, rgb(105, 225, 225) 90%), normal);
 
     p {
         font-size: 20px;

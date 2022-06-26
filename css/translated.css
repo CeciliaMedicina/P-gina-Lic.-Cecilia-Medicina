@@ -1,4 +1,5 @@
 /* MISC */
+/* Font Sizes*/
 /* normalize */
 * {
   margin: 0;
@@ -10,6 +11,145 @@ ul {
 
 a {
   text-decoration: none; }
+
+/* PARTIALS */
+/* header */
+header {
+  display: flex;
+  background: linear-gradient(to right, #13a2a2 30%, #69e1e1 90%);
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: sans-serif; }
+  header__img {
+    max-width: 280px; }
+  header .menu__lista {
+    display: flex;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    gap: 40px;
+    padding-left: 0px; }
+    header .menu__lista a {
+      color: white; }
+      header .menu__lista a:hover {
+        background-color: #f6a6b3;
+        transition: background-color 1s; }
+
+/* footer */
+footer {
+  display: flex;
+  background: linear-gradient(to left, #13a2a2 30%, #69e1e1 90%);
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: normal; }
+  footer p {
+    font-size: 20px;
+    margin: 0; }
+  footer__picture {
+    display: flex;
+    justify-content: space-evenly; }
+  footer__iconos {
+    width: 20px; }
+
+/* VIEWS */
+/* main quien soy */
+.grid__quiensoy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0px 15px 0px 15px;
+  font-size: 16px; }
+  .grid__quiensoy .img__quiensoy {
+    grid-column: 1;
+    grid-row: 1 / 7;
+    transition: transform .5s; }
+  .grid__quiensoy .img__quiensoy:hover {
+    transform: scale(1.4); }
+  .grid__quiensoy .p__quiensoy, .grid__quiensoy .p1, .grid__quiensoy .p2, .grid__quiensoy .p3, .grid__quiensoy .p4 {
+    grid-column: 2 / 5;
+    font-family: 'Montserrat', sans-serif; }
+  .grid__quiensoy .p1 {
+    grid-row: 1; }
+  .grid__quiensoy .p2 {
+    grid-row: 2; }
+  .grid__quiensoy .p3 {
+    grid-row: 3;
+    text-align: justify; }
+  .grid__quiensoy .p4 {
+    grid-row: 4 / 6;
+    text-align: justify; }
+  .grid__quiensoy .a__quiensoy {
+    grid-column: 2 / 5;
+    grid-row: 6;
+    font-family: 'Montserrat', sans-serif;
+    animation-iteration-count: 5;
+    animation-delay: 2s; }
+
+/* Modalidad */
+.terapiaonline__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  font-size: 16px; }
+  .terapiaonline__grid__p {
+    grid-row: 1; }
+  .terapiaonline__grid__h1 {
+    grid-row: 2;
+    text-align: center;
+    font-size: 38px; }
+  .terapiaonline__grid__p2 {
+    grid-row: 3; }
+
+.li__ventajas {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px; }
+
+.section__terapiapresencial {
+  margin-bottom: 60px; }
+  .section__terapiapresencial .grid__terapiapresencial {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
+    font-size: 16px; }
+    .section__terapiapresencial .grid__terapiapresencial__modalidad {
+      grid-row: 1;
+      text-align: center;
+      font-size: 38px; }
+    .section__terapiapresencial .grid__terapiapresencial__p1 {
+      grid-row: 2; }
+    .section__terapiapresencial .grid__terapiapresencial__p2 {
+      grid-row: 3; }
+
+/* contacto */
+form {
+  display: grid;
+  grid-template-columns: 370px 300px;
+  grid-template-rows: 30px 30px 160px;
+  justify-content: center;
+  align-content: center;
+  min-height: 553px;
+  gap: 50px;
+  font-family: 'Montserrat', sans-serif; }
 
 /* MEDIA QUERIES HEADER */
 @media screen and (max-width: 900px) {
@@ -136,89 +276,3 @@ a {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 30px; } }
-
-/* PARTIALS */
-/* header */
-header {
-  display: flex;
-  background: linear-gradient(to right, #13a2a2 30%, #69e1e1 90%);
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  header__img {
-    max-width: 280px; }
-  header .menu__lista {
-    display: flex;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 25px;
-    font-family: 'Times New Roman';
-    gap: 40px;
-    padding-left: 0px; }
-    header .menu__lista a {
-      color: white; }
-      header .menu__lista a:hover {
-        background-color: #f6a6b3;
-        transition: background-color 1s; }
-
-/* footer */
-footer {
-  display: flex;
-  justify-content: space-around;
-  background: linear-gradient(to left, #13a2a2 30%, #69e1e1 90%);
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: normal; }
-  footer p {
-    font-size: 20px;
-    margin: 0; }
-  footer__picture {
-    display: flex;
-    justify-content: space-evenly; }
-  footer__iconos {
-    width: 20px; }
-
-/* VIEWS */
-/* Modalidad */
-.terapiaonline__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center;
-  margin: auto;
-  margin-top: 60px;
-  font-family: 'Montserrat', sans-serif;
-  max-width: 1200px; }
-  .terapiaonline__grid__p {
-    grid-row: 1; }
-  .terapiaonline__grid__h1 {
-    grid-row: 2;
-    text-align: center; }
-  .terapiaonline__grid__p2 {
-    grid-row: 3; }
-
-.li__ventajas {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30px; }
-
-.section__terapiapresencial {
-  margin-bottom: 60px; }
-  .section__terapiapresencial .grid__terapiapresencial {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    margin: auto;
-    margin-top: 60px;
-    font-family: 'Montserrat', sans-serif;
-    max-width: 1200px; }
-    .section__terapiapresencial .grid__terapiapresencial__modalidad {
-      grid-row: 1;
-      text-align: center; }
-    .section__terapiapresencial .grid__terapiapresencial__p1 {
-      grid-row: 2; }
-    .section__terapiapresencial .grid__terapiapresencial__p2 {
-      grid-row: 3; }

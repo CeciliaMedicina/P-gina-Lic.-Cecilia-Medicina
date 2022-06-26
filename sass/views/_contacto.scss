@@ -1,0 +1,12 @@
+/* contacto */
+
+form {
+    display: grid;
+    grid-template-columns: 370px 300px;
+    grid-template-rows: 30px 30px 160px;
+    justify-content: center;
+    align-content: center;
+    min-height: 553px;
+    gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
