@@ -9,4 +9,23 @@ form {
     min-height: 553px;
     gap: 50px;
     font-family: 'Montserrat', sans-serif;
+
+    .Button__Enviar {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .Button__Reset {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    
+    .btn__reset {
+        width: 200px;
+    }
+    
+    .btn__enviar {
+        width: 200px;
+    }
+    
 }

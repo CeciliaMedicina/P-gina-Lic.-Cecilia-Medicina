@@ -40,24 +40,212 @@
     }
 }
 
-/* MEDIA QUERIES FOOTER */
+/* MEDIA QUERIES INDEX */
 
-@media screen and (max-width: 670px) {
-    footer p {
-        font-size: 15px;
-    }
-
+@media screen and (max-width: 1050px) {
+    #grid__index {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    } 
 }
 
-@media screen and (max-width: 490px) {
-    footer p {
+@media screen and (max-width: 900px) {
+    .p__section1 {
+        font-size: 30px;
+    }
+    
+    .p__section2 {
+        font-size: 20px;
+    }
+    
+    .p__section3 {
+        grid-column: 1 / 7;
+        font-size: 20px;
+}
+    .p__section4 {
+        grid-column: 2 / 6;
+        font-size: 20px;  
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    #grid__index {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    } 
+}
+
+@media screen and (max-width: 900px) {
+    .p__section2 {
+        grid-column: 1 / 7;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #grid__index {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    } 
+}
+
+/* MEDIA QUERIES SERVICIOS */
+
+@media screen and (max-width: 1230px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .img__niño {
+        grid-row: 5 / 7;
+    }
+    
+    .img__adolescente {
+        grid-row: 5 / 7;
+    }
+    .img__adultos {
+        grid-row: 5 / 7;
+    }
+
+    .p__niñosyadolescentes {
+        grid-row: 7 / 9;
+    }
+
+    .p__adultos {
+        grid-row: 7 / 9;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 130px 80px 70px 70px 160px 140px;
+    }
+
+    .img__niño {
+        grid-row: 5 / 6;
+    }
+    
+    .img__adolescente {
+        grid-row: 5 / 6;
+    }
+    .img__adultos {
+        grid-row: 5 / 6;
+    }
+
+    .p__niñosyadolescentes {
+        grid-row: 6 / 7;
+    }
+
+    .p__adultos {
+        grid-row: 6 / 7;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 130px 80px 70px 70px 160px 160px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .atencionclinica {
+        font-size: 30px;
+    }
+    
+    .niñosyadolescentes {
+        font-size: 25px;
+    }
+
+    .adultos {
+        font-size: 25px;
+    }
+
+    .p__servicios {
+        font-size: 13px;
+    }
+
+    .p__atencionclinica {
+        font-size: 13px;
+    }
+
+    .p__niñosyadolescentes {
+        font-size: 13px
+    }
+
+    .p__adultos {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 165px 50px 70px 50px 100px 170px;
+    }
+
+    .atencionclinica {
+        font-size: 25px;
+    }
+    
+    .niñosyadolescentes {
+        font-size: 20px;
+    }
+
+    .adultos {
+        font-size: 20px;
+    }
+
+    .p__servicios {
+        font-size: 13px;
+    }
+
+    .p__atencionclinica {
+        font-size: 13px;
+    }
+
+    .p__niñosyadolescentes {
+        font-size: 13px
+    }
+
+    .p__adultos {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .grid__servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 220px 50px 90px 50px 50px 285px;
+    }
+
+    .atencionclinica {
+        font-size: 20px;
+    }
+    
+    .niñosyadolescentes {
+        font-size: 17px;
+    }
+
+    .adultos {
+        font-size: 17px;
+    }
+
+    .p__servicios {
         font-size: 12px;
     }
-}
 
-@media screen and (max-width: 400px) {
-    footer {
-        flex-direction: column;
+    .p__atencionclinica {
+        font-size: 12px;
+    }
+
+    .p__niñosyadolescentes {
+        font-size: 12px
+    }
+
+    .p__adultos {
+        font-size: 12px;
     }
 }
 
@@ -175,5 +363,99 @@
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 30px;
+    }
+}
+
+/* MEDIA QUERIES CONTACTO */
+
+@media screen and (max-width: 730px) {
+    form {
+        grid-template-columns: 370px;
+        grid-template-rows: 30px 30px 30px 30px 160px 30px;
+    }
+
+    .form__nombre {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .form__edad {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .form__telefono {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .form__mail {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .form__textarea {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .form__botones {
+        grid-column: 1;
+        grid-row: 6;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    form {
+        display: block;
+        margin-top: 150px;
+    }
+
+    .form__nombre {
+        height: 35px;
+    }
+    
+    .form__edad {
+        height: 35px;
+    }
+    
+    .form__telefono {
+        height: 35px;
+    }
+    
+    .form__mail {
+        height: 35px;
+    }
+    
+    .form__textarea {
+        height: 200px;
+        padding-top: 15px;
+    }
+    
+    .form__botones {
+        height: 35px;
+        padding-left: 78px;
+    }
+}
+
+
+/* MEDIA QUERIES FOOTER */
+
+@media screen and (max-width: 670px) {
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        flex-direction: column;
     }
 }
