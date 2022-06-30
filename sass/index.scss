@@ -4,7 +4,6 @@
 @import './misc/normalize';
 @import './misc/mixins';
 
-
 /* PARTIALS */
 
 @import './partials/header';
@@ -17,5 +16,7 @@
 @import './views/servicios';
 @import './views/modalidad';
 @import './views/contacto';
+
+/* MEDIAQUERIES */
 
 @import './misc/mediaqueries';

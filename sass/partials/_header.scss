@@ -1,7 +1,12 @@
 /* header */
 
 header {
+    display: flex;
     @include flex(linear-gradient(to right,rgb(19, 162, 162) 30%, rgb(105, 225, 225) 90%), sans-serif);
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     &__img {
         max-width: 280px;

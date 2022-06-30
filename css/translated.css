@@ -17,12 +17,17 @@ a {
 /* header */
 header {
   display: flex;
+  display: flex;
   background: linear-gradient(to right, #13a2a2 30%, #69e1e1 90%);
   align-items: center;
   justify-content: space-around;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   header__img {
     max-width: 280px; }
   header .menu__lista {
@@ -280,32 +285,32 @@ form {
   form .btn__enviar {
     width: 200px; }
 
+/* MEDIAQUERIES */
 /* MEDIA QUERIES HEADER */
 @media screen and (max-width: 900px) {
   header {
     flex-direction: column; } }
 
 @media screen and (max-width: 727px) {
-  .menu__lista {
+  .menu .menu__lista {
     gap: 20px; } }
 
 @media screen and (max-width: 640px) {
-  .menu__lista {
-    font-size: 20px;
+  .menu .menu__lista {
     gap: 15px; } }
 
 @media screen and (max-width: 520px) {
-  .menu__lista {
+  .menu .menu__lista {
     font-size: 20px;
     gap: 15px; } }
 
 @media screen and (max-width: 475px) {
-  .menu__lista {
+  .menu .menu__lista {
     font-size: 18px;
     gap: 10px; } }
 
 @media screen and (max-width: 380px) {
-  .menu__lista {
+  .menu .menu__lista {
     font-size: 15px;
     gap: 5px; } }
 
@@ -340,6 +345,48 @@ form {
   #grid__index {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr); } }
+
+@media screen and (max-width: 760px) {
+  .grid__quiensoy {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 80px 110px 100px 100px 60px; } }
+
+@media screen and (max-width: 564px) {
+  .grid__quiensoy {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 110px 140px 120px 120px 60px; } }
+
+@media screen and (max-width: 482px) {
+  .grid__quiensoy {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 110px 170px 140px 140px 60px; }
+  .card-body {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 482px) {
+  .grid__quiensoy {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 110px 170px 140px 140px 60px; }
+  .card-body {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 431px) {
+  .grid__quiensoy {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 110px 120px 190px 160px 160px 60px; }
+  .card-body {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 396px) {
+  .grid__quiensoy {
+    font-size: 15px; }
+  .btn-primary {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 350px) {
+  .grid__quiensoy {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 130px 140px 190px 170px 180px 60px; } }
 
 /* MEDIA QUERIES SERVICIOS */
 @media screen and (max-width: 1230px) {
