@@ -1,6 +1,6 @@
 /* Modalidad */
 
-.terapiaonline__grid {
+.terapiaonline {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -11,7 +11,7 @@
     max-width: 1200px;
     font-size: map-get($fontsizes, parrafos);
 
-    &__p {
+    &__p1 {
         grid-row: 1;
     }
     
@@ -35,7 +35,7 @@
 .section__terapiapresencial {
     margin-bottom: 60px;
 
-    .grid__terapiapresencial {
+    .terapiapresencial {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
@@ -46,7 +46,7 @@
         max-width: 1200px;
         font-size: map-get($fontsizes, parrafos);
 
-        &__modalidad {
+        &__h1 {
             grid-row: 1;
             text-align: center;
             font-size: map-get($fontsizes, titulo2);
