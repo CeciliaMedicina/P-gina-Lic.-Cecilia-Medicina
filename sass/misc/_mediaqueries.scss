@@ -91,67 +91,55 @@
 
 @media screen and (max-width: 760px) {
     .quiensoy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 80px 80px 110px 100px 100px 60px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 80px 110px 100px 100px 300px 60px;
+        padding: 0px 30px 0px 30px;
+        justify-items: center;
     }
-}
+    
+    .quiensoy .quiensoy__picture {
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
+    }
 
-@media screen and (max-width: 564px) {
-    .quiensoy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 110px 140px 120px 120px 60px;
+    .quiensoy__picture .quiensoy__img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .quiensoy .quiensoy__a {
+        grid-column: 1 / 4;
+        grid-row: 7 / 8;
+    }
+
+    .quiensoy .quiensoy__p {
+        grid-column: 1 / 4;
     }
 }
 
 @media screen and (max-width: 482px) {
     .quiensoy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 110px 170px 140px 140px 60px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 90px 90px 130px 120px 120px 250px 80px;
+        font-size: 14px;
     }
     
+    .quiensoy__picture .quiensoy__img {
+        width: 100%;
+        height: 230px;
+    }
     .card-body {
         font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 482px) {
-    .quiensoy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 110px 170px 140px 140px 60px;
-    }
-    
-    .card-body {
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 431px) {
-    .quiensoy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 110px 120px 190px 160px 160px 60px;
-    }
-    
-    .card-body {
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 396px) {
-    .quiensoy {
-        font-size: 15px;
-    }
-
-    .btn-primary {
-        font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 350px) {
     .quiensoy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 130px 140px 190px 170px 180px 60px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 90px 100px 140px 130px 120px 250px 80px;
     }
 }
+
 
 /* MEDIA QUERIES SERVICIOS */
 
