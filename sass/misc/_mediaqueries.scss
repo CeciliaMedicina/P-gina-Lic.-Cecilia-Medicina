@@ -338,44 +338,25 @@
 @media screen and (max-width: 750px) {
     form {
         grid-template-columns: 370px;
-        grid-template-rows: 30px 30px 30px 30px 160px 30px;
     }
+}
 
-    .form__nombre {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    
-    .form__edad {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    
-    .form__telefono {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    .form__mail {
-        grid-column: 1;
-        grid-row: 4;
-    }
-    
-    .form__textarea {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    
-    .form__botones {
-        grid-column: 1;
-        grid-row: 6;
+@media screen and (max-width: 650px) {
+    form {
+        grid-template-columns: 200px;
+        column-gap: 20px;
     }
 }
 
 @media screen and (max-width: 425px) {
     form {
         display: block;
-        margin-top: 150px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .Button__Enviar {
+        padding-bottom: 10px;
     }
 
     .form__nombre {
