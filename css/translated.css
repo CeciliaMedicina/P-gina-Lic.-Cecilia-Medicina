@@ -446,6 +446,9 @@ form {
   form .btn__enviar {
     width: 200px; }
 
+.mapa {
+  margin-bottom: 30px; }
+
 /* MEDIAQUERIES */
 /* MEDIA QUERIES HEADER */
 @media screen and (max-width: 655px) {
