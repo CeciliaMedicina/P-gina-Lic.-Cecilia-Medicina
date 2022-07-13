@@ -137,7 +137,7 @@
 .orientacionvocacional {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 70px 70px 400px;
+    grid-template-rows: 80px 90px 100px 500px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -173,20 +173,20 @@
         margin-bottom: 0%;
     }
 
-    .tarjetas:hover .tarjetasorientacion__individual{
+    .tarjetas:hover .tarjetasorientacion1{
         transform: rotateY(180deg);
     }
 
-    .tarjetas:hover .tarjetasorientacion__grupal{
+    .tarjetas:hover .tarjetasorientacion2{
         transform: rotateY(180deg);
     }
 
-    .tarjetasorientacion__individual {
+    .tarjetasorientacion1 {
         grid-column: 1;
         grid-row: 1;
-        width: 300px;
-        height: 350px;
-        background: linear-gradient(rgba(239, 37, 168, 0.678), rgba(239, 37, 168, 0.15));
+        width: 600px;
+        height: 450px;
+        background: linear-gradient(rgba(19, 162, 162, 0.678), rgba(19, 162, 162, 0.15));
         position: relative;
         transform-style: preserve-3d;
         transition: 0.7s ease;
@@ -225,12 +225,12 @@
         }
     }
 
-    .tarjetasorientacion__grupal {
+    .tarjetasorientacion2 {
         grid-column: 1;
         grid-row: 2;
-        width: 300px;
-        height: 350px;
-        background: linear-gradient(rgba(239, 37, 168, 0.678), rgba(239, 37, 168, 0.15));
+        width: 600px;
+        height: 450px;
+        background: linear-gradient(rgba(19, 162, 162, 0.678), rgba(19, 162, 162, 0.15));
         position: relative;
         transform-style: preserve-3d;
         transition: 0.7s ease;
@@ -262,6 +262,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            font-size: 15px;
             padding: 15px;
             display: flex;
             color: #fff;
